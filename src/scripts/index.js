@@ -1,5 +1,5 @@
-import 'regenerator-runtime' /* for async await transpile */
 
+import 'regenerator-runtime' /* for async await transpile */
 import App from './views/app'
 
 const app = new App({

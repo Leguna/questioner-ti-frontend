@@ -25,7 +25,6 @@ class BackendSource {
   // MAHASISWA
   static async getListDosen(userId) {
     const credentials = this.getCredentials()
-    console.log(API_ENDPOINT.LIST_DOSEN)
     return axios({
       method: 'post',
       url: API_ENDPOINT.LIST_DOSEN,

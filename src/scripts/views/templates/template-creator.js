@@ -106,7 +106,6 @@ const createListDosenItem = (no, nama, makul, stamp, courseId, userId, dataExist
 const createQuestionItem = (nomorSoal, question, answer) => {
   const isDataExists = answer !== null
 
-  console.log(answer)
 
   let optionsHTML = ``
   for (let i = 1; i <= 5; i++) {

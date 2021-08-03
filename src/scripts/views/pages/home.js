@@ -13,9 +13,6 @@ const homeMahasiswa = {
     const credentials = BackendSource.getCredentials()
     let show = ``
     switch (credentials.role) {
-      case 0:
-
-        break
       case 1:
         show = dosenViewCreateListCourses()
         break
@@ -24,6 +21,7 @@ const homeMahasiswa = {
         break
       case 0:
         show = teknisiViewHome()
+        break
       case -1:
         show = adminViewHome()
         break
@@ -78,7 +76,6 @@ const homeMahasiswa = {
         let no = 0
 
         for (const dosen of listDosen) {
-          console.log(dosen)
           no++;
           const isDataExists = dosen.questions_group !== null
           let timestamp;

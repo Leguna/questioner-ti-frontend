@@ -7,7 +7,9 @@
     "start": "webpack-dev-server --config webpack.prod.js",
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "build-image": "node sharp.js"
+    "build-image": "node sharp.js",
+    "dev": "webpack serve",
+    "start-prod": "node server.js set NODE_ENV=production"
   },
   "engines": {
     "node": "12.x"
@@ -20,6 +22,8 @@
     "@popperjs/core": "^2.9.2",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
     "idb": "^6.1.2",
     "jquery": "^3.6.0",
     "sweetalert2": "^11.0.18"
