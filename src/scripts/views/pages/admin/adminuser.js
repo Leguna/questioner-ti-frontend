@@ -4,7 +4,7 @@ import BackaendSource from "../../../data/backend-source";
 
 const AdminUser = {
 
-  async render() {d
+  async render() {
     const credentials = BackaendSource.getCredentials()
     let show = ''
     if (credentials == null) {
@@ -52,8 +52,8 @@ const AdminUser = {
               </td>
           </tr>
           <tr>
-              <th>1</th>
-              <td>Ahmad Tuflihun</td>
+              <th>2</th>
+              <td>Siswa 2</td>
               <td>2001</td>
               <td>tuflihun</td>
               <td>ahmadgabut@gmail.com</td>
@@ -64,8 +64,8 @@ const AdminUser = {
               </td>
           </tr>
           <tr>
-              <th>1</th>
-              <td>Ahmad Tuflihun</td>
+              <th>3</th>
+              <td>Siswa 3</td>
               <td>2002</td>
               <td>tuflihun</td>
               <td>ahmadgabut@gmail.com</td>
@@ -77,7 +77,10 @@ const AdminUser = {
           </tr>
       </tbody>
     </table>
+    <div class="d-inline">
+    <a class="btn btn-secondary" href="/#/"><i class="fa fa-arrow-left"></i></a>
     <a class="btn btn-primary " href="/#/admin/user/add"><i class="fa fa-plus"></i> Tambah user</a>
+</div>
     </div>
 </div>
       `

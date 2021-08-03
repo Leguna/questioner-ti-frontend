@@ -44,8 +44,10 @@ const UserAdd = {
           </select>
         </div>
       </div>
-      
-      <button id="tambahButton" type="submit" class="btn btn-primary mt-3"><i class="fa fa-plus"></i> Tambah</button>
+      <div class="d-inline mt-3">
+      <a class="btn btn-secondary" href="/#/admin/user"><i class="fa fa-arrow-left"></i> </a>
+      <button id="tambahButton" type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah</button>      
+</div>
     </form>
   </div>
 </div>
