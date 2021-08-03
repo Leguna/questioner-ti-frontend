@@ -1,0 +1,114 @@
+@import "MyStyle";
+
+/* BOX RIGHT BACKGROUND */
+#backgroundLogin {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#login {
+  height: 100vh;
+}
+#loginFluid {
+  height: 100%;
+}
+
+/* BOX BACKGROUND RIGHT SIDE */
+.box {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  border: 1.5em solid #f3f3f3;
+
+  border-radius: 1em;
+}
+
+
+#box1 {
+  transform-origin: left;
+  top: 0;
+  transform: translate(-80%, 0%) rotate(-20deg);
+}
+#box2 {
+  transform-origin: right;
+  top: 40%;
+  right: 0%;
+  transform: translate(45%, -50%) rotate(30deg);
+}
+#box3 {
+  transform-origin: left;
+  bottom: 0;
+  transform: translate(50%, 0%) rotate(70deg);
+}
+
+/* RIGHT SIDE */
+#loginRight {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#formLogin {
+  margin: auto;
+  width: 80%;
+  max-width: 26em;
+}
+
+/* Button */
+#buttonLogin {
+  align-content: center;
+  width: 10em;
+}
+
+#buttonLoginText {
+  font-weight: bold;
+  padding: 0 1em 0 1em;
+  margin: 0;
+}
+
+/* LEFT SIDE */
+#loginLeft {
+  /* background-image: url("../assets/polnep.png"); */
+  background-color: $blueDark2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+#loginLeftContainer {
+  margin: auto;
+
+  width: 80%;
+  max-width: 26em;
+}
+
+/* LEFT LOGO */
+#imageLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
+  width: 12em;
+}
+
+/* Line */
+hr {
+  width: 8em;
+  display: block;
+  opacity: 1;
+  overflow: hidden;
+  background-color: white;
+  border: 3px solid;
+}
+
+#hr2 {
+  width: 4em;
+  color: rgba(237, 27, 36, 255);
+  border-color: #07eceb;
+  background-color: #07eceb;
+  margin: auto;
+  margin-bottom: 4em;
+}

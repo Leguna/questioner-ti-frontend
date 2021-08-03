@@ -1,0 +1,59 @@
+@import 'myStyle.scss';
+@import 'card.scss';
+
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+
+// Skip Link
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: $blueDark;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+#mainContent {
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+// TABLE
+#q-table {
+  th {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  tbody {
+    .soal {
+      text-align: start;
+      vertical-align: middle;
+    }
+  }
+
+}
+
+
+// region HEADER
+.navbar {
+  background-color: $blueDark;
+  color: $blueDark;
+}
+
+// endregion

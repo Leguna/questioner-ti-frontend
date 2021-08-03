@@ -1,0 +1,79 @@
+@import 'myStyle.scss';
+
+
+@media screen and (min-width: 600px) {
+    .posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .posts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        max-width: 1200px;
+    }
+
+    .restaurantDetail {
+        max-width: 1200px;
+    }
+
+    .posts {
+        padding: 0px 0px 16px 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        z-index: 10;
+        background-color: $color2;
+        width: fit-content;
+        position: absolute;
+        width: 100%;
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+
+        a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav__item {
+        display: list-item;
+        border-bottom: 2px solid white;
+        text-align: left;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 500px) {
+    .header__menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .nav__list {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+}
